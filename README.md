@@ -23,8 +23,10 @@ sprzedaży, wraz z dotyczącymi ich datami wystąpienia w podanym zakresie.
 
 ## How to build/use
 To build/ run application, enter following commands into command line:
-```mvn package                                              ## to build application
-   java -jar target/api_rekrutacyjne-1.0-SNAPSHOT.jar       ## to run application
+
+```
+mvn package                                              ## to build application
+java -jar target/api_rekrutacyjne-1.0-SNAPSHOT.jar       ## to run application
 ```                                               
                                                     
                                                     
