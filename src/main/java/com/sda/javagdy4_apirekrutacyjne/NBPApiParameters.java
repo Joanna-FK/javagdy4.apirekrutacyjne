@@ -1,15 +1,20 @@
 package com.sda.javagdy4_apirekrutacyjne;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDate;
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
+
 public class NBPApiParameters {
     private LocalDate startDate;
     private LocalDate endDate;
-    private NBPCurrency nbpCurrency;
+
+    @Setter
+    private NBPCurrency currency;
+
+    public void setEndDate(String userInput) throws DateTimeParsingException {
+        this.endDate = DateTimeUtilties.loadEndDate(userInput);
+    }
 }
