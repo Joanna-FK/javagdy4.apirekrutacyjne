@@ -1,8 +1,11 @@
 package com.sda.javagdy4_apirekrutacyjne;
 
+import lombok.extern.log4j.Log4j;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
+@Log4j
 
 public class DateTimeUtilties {
     private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd");
@@ -24,7 +27,7 @@ public class DateTimeUtilties {
                 throw new DateTimeParseException("End date should be no later than yesterday.", input, 1);
             }
         } catch (DateTimeParseException dtpe) {
-            System.out.println("Błąd parsowania daty.");
+            log.info("Błąd parsowania daty.");
             throw new DateTimeParsingException(dtpe.getMessage());
         }
         return loadedDate;
@@ -39,7 +42,7 @@ public class DateTimeUtilties {
                 throw new DateTimeParseException("Start date should be no later than end date.", input, 1);
             }
         } catch (DateTimeParseException dtpe) {
-            System.out.println("Błąd parsowania daty.");
+            log.info("Błąd parsowania daty.");
             throw new DateTimeParsingException(dtpe.getMessage());
         }
         return loadedDate;
