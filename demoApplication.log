@@ -1,1 +1,30 @@
 2020-07-04 13:59:12,417 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Please enter currency [dollar, euro, rubel]:
+2020-07-04 14:16:41,257 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Please enter currency [dollar, euro, rubel]:
+2020-07-04 14:16:50,353 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Please enter end date [yyyy-MM-dd]:
+2020-07-04 14:16:58,842 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Please enter start date [yyyy-MM-dd]:
+2020-07-04 14:17:18,869 [main] INFO  com.sda.javagdy4_apirekrutacyjne.NBPApi  - Request URL: http://api.nbp.pl/api/exchangerates/rates/C/EUR/2020-06-01/2020-06-30/?format=json
+2020-07-04 14:20:40,761 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Please enter currency [dollar, euro, rubel]:
+2020-07-04 14:20:46,885 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Please enter end date [yyyy-MM-dd]:
+2020-07-04 14:20:52,150 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Please enter start date [yyyy-MM-dd]:
+2020-07-04 14:20:59,815 [main] INFO  com.sda.javagdy4_apirekrutacyjne.NBPApi  - Request URL: http://api.nbp.pl/api/exchangerates/rates/C/EUR/2020-06-01/2020-06-30/?format=json
+2020-07-04 14:21:00,132 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Rate(no=105/C/NBP/2020, effectiveDate=2020-06-01, bid=4.399, ask=4.4878)
+2020-07-04 14:21:00,150 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Rate(no=106/C/NBP/2020, effectiveDate=2020-06-02, bid=4.3775, ask=4.4659)
+2020-07-04 14:21:00,150 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Rate(no=107/C/NBP/2020, effectiveDate=2020-06-03, bid=4.3521, ask=4.4401)
+2020-07-04 14:21:00,151 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Rate(no=108/C/NBP/2020, effectiveDate=2020-06-04, bid=4.3671, ask=4.4553)
+2020-07-04 14:21:00,151 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Rate(no=109/C/NBP/2020, effectiveDate=2020-06-05, bid=4.3838, ask=4.4724)
+2020-07-04 14:21:00,151 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Rate(no=110/C/NBP/2020, effectiveDate=2020-06-08, bid=4.389, ask=4.4776)
+2020-07-04 14:21:00,152 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Rate(no=111/C/NBP/2020, effectiveDate=2020-06-09, bid=4.3873, ask=4.4759)
+2020-07-04 14:21:00,152 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Rate(no=112/C/NBP/2020, effectiveDate=2020-06-10, bid=4.3984, ask=4.4872)
+2020-07-04 14:21:00,152 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Rate(no=113/C/NBP/2020, effectiveDate=2020-06-12, bid=4.4157, ask=4.5049)
+2020-07-04 14:21:00,152 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Rate(no=114/C/NBP/2020, effectiveDate=2020-06-15, bid=4.399, ask=4.4878)
+2020-07-04 14:21:00,152 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Rate(no=115/C/NBP/2020, effectiveDate=2020-06-16, bid=4.3914, ask=4.4802)
+2020-07-04 14:21:00,153 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Rate(no=116/C/NBP/2020, effectiveDate=2020-06-17, bid=4.3892, ask=4.4778)
+2020-07-04 14:21:00,153 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Rate(no=117/C/NBP/2020, effectiveDate=2020-06-18, bid=4.4189, ask=4.5081)
+2020-07-04 14:21:00,153 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Rate(no=118/C/NBP/2020, effectiveDate=2020-06-19, bid=4.4122, ask=4.5014)
+2020-07-04 14:21:00,153 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Rate(no=119/C/NBP/2020, effectiveDate=2020-06-22, bid=4.4186, ask=4.5078)
+2020-07-04 14:21:00,154 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Rate(no=120/C/NBP/2020, effectiveDate=2020-06-23, bid=4.4032, ask=4.4922)
+2020-07-04 14:21:00,154 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Rate(no=121/C/NBP/2020, effectiveDate=2020-06-24, bid=4.4011, ask=4.4901)
+2020-07-04 14:21:00,154 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Rate(no=122/C/NBP/2020, effectiveDate=2020-06-25, bid=4.4045, ask=4.4935)
+2020-07-04 14:21:00,154 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Rate(no=123/C/NBP/2020, effectiveDate=2020-06-26, bid=4.4224, ask=4.5118)
+2020-07-04 14:21:00,154 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Rate(no=124/C/NBP/2020, effectiveDate=2020-06-29, bid=4.4258, ask=4.5152)
+2020-07-04 14:21:00,155 [main] INFO  com.sda.javagdy4_apirekrutacyjne.Main  - Rate(no=125/C/NBP/2020, effectiveDate=2020-06-30, bid=4.4215, ask=4.5109)

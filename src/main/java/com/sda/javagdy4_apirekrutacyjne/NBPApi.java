@@ -1,5 +1,6 @@
 package com.sda.javagdy4_apirekrutacyjne;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.log4j.Log4j;
 
 import java.io.IOException;
@@ -7,6 +8,9 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.util.ArrayList;
+import java.util.List;
+
 @Log4j
 
 public class NBPApi {
@@ -14,8 +18,9 @@ public class NBPApi {
 private final HttpClient httpClient = HttpClient.newBuilder()
         .version(HttpClient.Version.HTTP_2)
         .build();
+private final ObjectMapper objectMapper = new ObjectMapper();
 
-    public void requestBidAskRates (NBPApiParameters parameters){
+    public List<Rate> requestBidAskRates (NBPApiParameters parameters){
         String requestUrl = prepareRequestURL(parameters);
         log.info("Request URL: "+ requestUrl);
 
@@ -29,7 +34,9 @@ private final HttpClient httpClient = HttpClient.newBuilder()
             //spodziemwamy się odpowiedzi w postaci String (bodyhandlers)
             HttpResponse <String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
             if(response.statusCode()==200){
-                log.info("Responde: " + response.body());
+               String responseBody = response.body();
+               ExchangeRates exchangeRates = objectMapper.readValue(responseBody, ExchangeRates.class);
+               return exchangeRates.getRates();
             }else{
                 log.error("Error: "+ response.statusCode());
             }
@@ -38,7 +45,7 @@ private final HttpClient httpClient = HttpClient.newBuilder()
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
+        return new ArrayList<>();
     }
     private String prepareRequestURL(NBPApiParameters parameters) {
         return API_BID_ASK_ENDPOINT

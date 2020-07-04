@@ -2,6 +2,7 @@ package com.sda.javagdy4_apirekrutacyjne;
 
 import lombok.extern.log4j.Log4j;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
 @Log4j
@@ -15,7 +16,9 @@ public class Main {
         loadAndSetStartDate(scanner, parameters);
 
         NBPApi nbpApi = new NBPApi();
-        nbpApi.requestBidAskRates(parameters);
+
+        List<Rate> rates = nbpApi.requestBidAskRates(parameters);
+        rates.forEach(log::info);
     }
 
     private static void loadAndSetStartDate(Scanner scanner, NBPApiParameters parameters) {
