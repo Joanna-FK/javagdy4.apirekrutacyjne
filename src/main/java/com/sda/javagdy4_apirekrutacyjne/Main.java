@@ -11,6 +11,9 @@ public class Main {
         loadAndSetCurrency(scanner, parameters);
         loadAndSetEndDate(scanner, parameters);
         loadAndSetStartDate(scanner, parameters);
+
+        NBPApi nbpApi = new NBPApi();
+        nbpApi.requestBidAskRates(parameters);
     }
 
     private static void loadAndSetStartDate(Scanner scanner, NBPApiParameters parameters) {
