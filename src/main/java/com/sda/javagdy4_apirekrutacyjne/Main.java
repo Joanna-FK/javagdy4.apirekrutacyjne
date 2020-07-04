@@ -10,7 +10,20 @@ public class Main {
         NBPApiParameters parameters = new NBPApiParameters();
         loadAndSetCurrency(scanner, parameters);
         loadAndSetEndDate(scanner, parameters);
+        loadAndSetStartDate(scanner, parameters);
     }
+
+    private static void loadAndSetStartDate(Scanner scanner, NBPApiParameters parameters) {
+        do {
+            System.out.println("Please enter start date [yyyy-MM-dd]:");
+            try {
+                parameters.setStartDate(scanner.nextLine());
+            } catch (DateTimeParsingException e) {
+                System.err.println("Wrong date: " + e.getMessage());
+            }
+        } while (parameters.getStartDate() == null);
+    }
+
     private static void loadAndSetEndDate(Scanner scanner, NBPApiParameters parameters) {
         do {
             System.out.println("Please enter end date [yyyy-MM-dd]:");
@@ -28,6 +41,8 @@ public class Main {
             Optional<NBPCurrency> optionalCurrency = NBPCurrency.parse(scanner.nextLine());
             if (optionalCurrency.isPresent()){
                 parameters.setCurrency(optionalCurrency.get());
+            } else{
+                System.err.println("Error: currency is wrong, please correct");
             }
         }while (parameters.getCurrency()==null); // wykonuj pętle, dopóki currency == null
     }
